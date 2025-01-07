@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculator</title>
-        <style>
-            .calculator-body{
-                height:300px;
-                width:250px;
-                background-color: #3d3d5c;
-                margin:30px auto;
-                padding:20px;
-                border-radius:10px;
-            }
-            .screen{
-                background-color:#A1AF77;
-                text-align:right;
-                width:220px;
-                display:block;
-                font-size:25px;
-               margin:10px auto;
-            }
-            .btn-container{
-                margin-top: 30px;
-                height:200px;
-              
-                display:flex;
-                flex-wrap: wrap;
-                justify-content:space-between;
-                flex-direction: column;
-            }
-            .btn{
-                width: 50px;
-                font-size: 20px;
-                padding:2px 0;
-                text-align:center;
-                margin:3px;
-            }
-            .btn:hover{
-                box-shadow:0px 0px 10px 0px white;
-            }
-            .btn-equals{
-                background-color: #FF6348;
-                height:73px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="calculator-body">
-            <input type="text" value="0" class="screen"/>
+<head>
+    <title>Calculator</title>
+    <style>
+        .body-calculator{
+            height: 500px;
+            width: 450px;
+            background-color: #3d3d5c;
+            border-radius: 10px;
+            margin: 40px auto;
+        }
+        .heading-left{
+            color: white;
+            position: fixed;
+            margin: 10px;
+           
+        }
+        .heading-right{
+            color: white;
+            margin-left: 370px;
+            position: relative;
+            top: 10px;
+        }
+        .calculator-display{
+            background-color: #a1af77;
+            font-size: 40px;
+            box-shadow: 1px 1px 1px 1px white;
+            text-align: right;
+            width: 360px;
+            margin: 0px auto;
+            padding: 5px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .btn-calculator{
+            height: 300px;
+            width:470;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
        
-        <div class="btn-container">
-            <button class="btn">AC</button>
-            <button class="btn">7</button>
-            <button class="btn">4</button>
-            <button class="btn">1</button>
-            <button class="btn">0</button>
-            <button class="btn">M+</button>
-            <button class="btn">8</button>
-            <button class="btn">5</button>
-            <button class="btn">2</button>
-            <button class="btn">.</button>
-            <button class="btn">/</button>
-            <button class="btn">9</button>
-            <button class="btn">6</button>
-            <button class="btn">3</button>
-            <button class="btn">%</button>
-            <button class="btn">x</button>
-            <button class="btn">-</button>
-            <button class="btn">+</button>
-            <button class="btn btn-equals">=</button>
+        }
+        .btn-on-off{
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+            position: relative;
+            left: 218px;
+        }
+        .btn-onoff-cal{
+            background-color: tomato;
+            font-size: 25px;
+            margin: 10px;
+        }
+        .btn-onoff-cal:hover{
+            box-shadow: 0px 0px 10px 0px tomato;
+        }
+        .btn-white{
+            border: 1px solid;
+            font-size: 30px;
+            height: 55px;
+            width: 60px;
+            margin: 5px;
+            margin-left: 20px;
+        }
+        .btn-white:hover{
+            box-shadow: 0px 0px 10px 0px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="body-calculator">
+        <b class="heading-left">Auto power off</b>
+        <b class="heading-right">Cacio-999</b>
+        <input type="text" value="0" class="calculator-display">
+        <div class="btn-on-off">
+            <button class="btn-onoff-cal">OFF</button>
+            <button class="btn-onoff-cal">ON/AC</button>
         </div>
-    </body>
+        <div class="btn-calculator">
+            <button class="btn-white">7</button>
+            <button class="btn-white">4</button>
+            <button class="btn-white">1</button>
+            <button class="btn-white">0</button>
+            
+            <button class="btn-white">8</button>
+            <button class="btn-white">5</button>
+            <button class="btn-white">2</button>
+            <button class="btn-white">.</button>
+            
+            
+            <button class="btn-white">9</button>
+            <button class="btn-white">6</button>
+            <button class="btn-white">3</button>
+            <button class="btn-white">=</button>
+
+            <button class="btn-white">*</button>
+            <button class="btn-white">/</button>
+            <button class="btn-white">+</button>
+            <button class="btn-white">-</button>
+
+          
+        </div>        
+    </div>
+</body>
 </html>
